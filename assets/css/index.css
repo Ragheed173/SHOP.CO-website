@@ -3,5 +3,8 @@ header p, header a {
     color: #fff;
     padding: 10px;
 }
-
-
+@media screen and (max-width: 425px) {
+    header p, header a {
+        padding: 5px;
+    }
+}
