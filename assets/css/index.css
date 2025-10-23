@@ -1,10 +1,90 @@
-header p, header a {
-    background-color: #000000;
+header {
+    background-color: #000;
+}
+
+header p,
+header a {
     color: #fff;
     padding: 10px;
 }
+
+nav a img {
+    height: 22px;
+    width: 160px;
+}
+
+nav .search-box {
+    background-color: #f0f0f0;
+    border-radius: 62px;
+    padding: 0 16px;
+}
+
+nav .search-input {
+    background: transparent;
+    border: 0;
+}
+
+nav .search-icon-wrapper {
+    background: transparent;
+    border: 0;
+}
+nav .navbar-collapse {
+    flex-grow: 0;
+}
+form.d-flex {
+    flex-grow: 1;
+}
+
+form.d-flex .search-box {
+    width: 100%;
+    margin-right: 0;
+}
+
+nav .navbar-toggler {
+    border: none;
+    color: #000;
+    padding: 0 10px;
+}
+
+#search-icon {
+    display: none !important;
+}
+
+@media (max-width: 1200px) {
+    nav .navbar-collapse .navbar-nav {
+        gap: 0.5rem !important;
+    }
+}
+
 @media screen and (max-width: 425px) {
-    header p, header a {
+
+    header p,
+    header a {
         padding: 5px;
+    }
+}
+
+@media (max-width: 390px) {
+    nav form[role="search"] {
+        display: none !important;
+    }
+
+    #search-icon {
+        display: block !important;
+    }
+
+    .icons {
+        gap: .5rem !important;
+    }
+
+    .navbar-brand img {
+        width: 126px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 332px) {
+    nav .navbar-brand {
+        margin-right: 20px !important;
     }
 }
