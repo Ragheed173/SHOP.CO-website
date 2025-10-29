@@ -192,3 +192,27 @@ nav .navbar-toggler {
     font-size: 12px;
     }
 }
+
+/* END HERO */
+
+/* BRANDS */
+.brands {
+    background-color: #000;
+}
+
+.brands .brand {
+    padding: 44px 0;
+    gap: 55px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+@media (max-width: 425px) {
+    .brands .brand {
+        padding: 38px 0;
+        gap: 30px;
+    }
+    .brands .brand img {
+        width: 25%;
+        height: auto;
+    }
+}
