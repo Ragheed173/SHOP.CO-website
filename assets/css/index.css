@@ -298,9 +298,10 @@ nav .navbar-toggler {
     .new-arrivals .carousel-item {
         padding: 0px;
     }
+
     .new-arrivals .btn {
-    font-size: 14px;
-    padding: 12px 130px;
+        font-size: 14px;
+        padding: 12px 130px;
     }
 }
 
@@ -310,6 +311,7 @@ hr {
     border: none;
     border-top: 1px solid #e0e0e0;
 }
+
 /* TOP SELLING */
 .top-selling .section-title {
     font-size: 48px;
@@ -379,8 +381,124 @@ hr {
     .top-selling .carousel-item {
         padding: 0px;
     }
+
     .top-selling .btn {
-    font-size: 14px;
-    padding: 12px 130px;
+        font-size: 14px;
+        padding: 12px 130px;
     }
 }
+
+/* END TOP SELLING */
+
+/* BROWSE BY DRESS STYLE */
+.Browse-style {
+    padding: 80px 0;
+}
+
+.Browse-style h1 {
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 70px;
+    text-align: center;
+    color: black;
+}
+
+.Browse-style .container {
+    background-color: #f0f0f0;
+    border-radius: 40px;
+}
+
+.Browse-style .browse-style-images {
+    padding: 67px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Browse-style .browse-style-images .row {
+    gap: 20px;
+}
+
+.Browse-style .browse-style-images .row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.Browse-style .browse-style-images .row .col-sm-4 {
+    width: 36.333333%;
+}
+
+.Browse-style .browse-style-images .row .col-sm-8 {
+    width: 60.666667%;
+}
+
+.Browse-style img:hover {
+    transform: scale(1.05);
+}
+
+.Browse-style .tablet-browse-style-images,
+.Browse-style .mobile-browse-style-images {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .Browse-style h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .Browse-style .browse-style-images {
+        display: none;
+    }
+
+    .Browse-style .tablet-browse-style-images {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+    .Browse-style .tablet-browse-style-images img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .Browse-style .tablet-browse-style-images,
+    .Browse-style .browse-style-images {
+        display: none;
+    }
+
+    .Browse-style h1 {
+        padding: 0 56px;
+        padding-top: 40px;
+    }
+
+    .Browse-style .mobile-browse-style-images{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 28px;
+    }
+
+    .Browse-style .mobile-browse-style-images .row {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .Browse-style .mobile-browse-style-images img {
+        border-radius: 20px;
+    }
+}
+
+/* END BROWSE BY DRESS STYLE */
